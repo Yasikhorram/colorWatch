@@ -4,11 +4,12 @@ import ColorBox from "./ColorBox";
 
 function App() {
   const [text, setText] = useState("");
+  const [hexVal, setHexVal] = useState("");
 
   return (
     <div className="App">
-      <ColorBox text={text} />
-      <AddColor text={text} setText={setText} />
+      <ColorBox text={text} hexVal={hexVal} />
+      <AddColor text={text} setText={setText} setHexVal={setHexVal} />
     </div>
   );
 }
