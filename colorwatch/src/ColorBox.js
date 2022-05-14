@@ -1,6 +1,9 @@
-function ColorBox({ text, hexVal }) {
+function ColorBox({ text, hexVal, isDarkText }) {
   return (
-    <div className="box" style={{ backgroundColor: text }}>
+    <div
+      className="box"
+      style={{ backgroundColor: text, color: isDarkText ? "#000" : "#FFF" }}
+    >
       <p> {text ? text : "empty value"}</p>
     </div>
   );

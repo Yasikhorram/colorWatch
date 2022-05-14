@@ -1,4 +1,4 @@
-const AddColor = ({ text, setText, hexVal, setHexVal }) => {
+const AddColor = ({ text, setText, setIsDarkText, isDarkText }) => {
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="color">
