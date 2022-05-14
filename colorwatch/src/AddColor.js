@@ -12,6 +12,9 @@ const AddColor = ({ text, setText, setIsDarkText, isDarkText }) => {
           }}
         />
       </label>
+      <button type="button" onClick={() => setIsDarkText(!isDarkText)}>
+        Toggle text color
+      </button>
     </form>
   );
 };
