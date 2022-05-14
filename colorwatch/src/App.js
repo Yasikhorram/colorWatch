@@ -1,11 +1,13 @@
 import { useState } from "react";
 import AddColor from "./AddColor";
 import ColorBox from "./ColorBox";
+
 function App() {
   const [text, setText] = useState("");
+
   return (
     <div className="App">
-      <ColorBox />
+      <ColorBox text={text} />
       <AddColor text={text} setText={setText} />
     </div>
   );

@@ -1,5 +1,9 @@
-function ColorBox() {
-  return <div className="box">Empty Value</div>;
+function ColorBox({ text }) {
+  return (
+    <div className="box" style={{ backgroundColor: text }}>
+      Empty Value
+    </div>
+  );
 }
 
 export default ColorBox;
